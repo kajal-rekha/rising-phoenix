@@ -8,7 +8,7 @@ import Button from "./Button";
 const Navbar = () => {
   return (
     <header className=" h-20 fixed top-0 left-0 right-0 bg-dark backdrop-blur-lg border-b border-dark/75 z-[100]">
-      <div className="wrapper w-full h-full flex justify-between items-center text-light ">
+      <div className="wrapper w-full h-full flex justify-between items-center text-light/80 ">
         {/* NAV LEFT */}
         <nav>
           <Link href="/" className="text-xl font-semibold link-item">

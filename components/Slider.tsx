@@ -54,8 +54,8 @@ const Slide = () => {
             style={{ backgroundImage: `url(${image.src})` }}
             key={image.id}
           >
-            <div className="slide-texts container py-10 mx-auto flex flex-col items-start justify-center h-full gap-5 text-light">
-              <h1 className="text-4xl text-accant1 md:text-5xl lg:text-6xl font-bold space-font w-full uppercase">
+            <div className="slide-texts container py-10 mx-auto flex flex-col items-start justify-center h-full gap-5 text-light/80">
+              <h1 className="text-4xl  md:text-5xl lg:text-6xl font-bold space-font w-[90%] uppercase">
                 {image.headline}
               </h1>
 
@@ -72,7 +72,7 @@ const Slide = () => {
           </div>
         ))}
       </div>
-      <div className="btns absolute w-screen justify-center bottom-20 m-auto  z-[1] text-white text-2xl flex gap-10 ">
+      <div className="btns absolute w-screen justify-center bottom-10 m-auto  z-[1] text-white text-2xl flex gap-10 ">
         <button
           onClick={prevSlide}
           className="prev-btn w-14 h-12 lg:h-14 lg:w-20 flex justify-center items-center bg-accant1 text-white border border-white hover:bg-accant1/75 hover:text-gray-200 hover:border-gray-200 duration-300"
