@@ -8,7 +8,6 @@ const buttonVariants = cva("px-6 py-3 rounded-xl duration-300", {
       green: "bg-accant1 text-light hover:bg-accant1/90",
       dark: "bg-dark text-light hover:bg-dark/90",
       light: "bg-light text-dark hover:bg-light/90",
-      ghost: "bg-transparent text-dark hover:bg-dark/10",
     },
   },
   defaultVariants: {
