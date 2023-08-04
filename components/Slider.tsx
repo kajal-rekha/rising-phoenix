@@ -8,7 +8,7 @@ const data = [
   {
     id: 1,
     src: "https://res.cloudinary.com/dh0ado2ir/image/upload/v1691094495/1.23-RAE-PMA-_lzijsy.webp",
-    headline: "Master the Art of Martial Arts at Phoenix Martial Academy",
+    headline: "Master Martial Arts at Phoenix Academy",
     body: "Welcome to Phoenix Martial Academy, where ancient traditions meet modern techniques. Our academy is dedicated to empowering individuals of all ages with the knowledge and skills of various martial arts disciplines. Our experienced instructors will guide you on a transformative journey, building physical strength, mental focus, and self-discipline.",
     cta: "Enroll Now for a Free Trial Class",
   },
@@ -23,7 +23,7 @@ const data = [
   {
     id: 3,
     src: "https://res.cloudinary.com/dh0ado2ir/image/upload/v1691062015/275611553_10161485291193368_443025016284416468_n_ymli9g.jpg",
-    headline: "Unleash Your Potential with Personalized Training",
+    headline: "Empower Through Personalized Training",
     body: "At Phoenix Martial Academy, we believe in customizing your martial arts journey to suit your goals and preferences. Our certified instructors will work closely with you, assessing your strengths and areas of improvement, and tailor a training plan to maximize your progress. Whether you're focused on self-defense, competition, or overall fitness, our personalized approach ensures you achieve your aspirations.",
     cta: "Start Your Personalized Training",
   },
