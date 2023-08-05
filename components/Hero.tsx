@@ -1,7 +1,7 @@
 import Slider from "./Slider";
 const Hero = () => {
   return (
-    <div className="min-h-screen overflow-x-hidden">
+    <div className="min-h-screen hero mt-20 overflow-x-hidden bg-dark">
       <Slider />
     </div>
   );

@@ -7,9 +7,9 @@
   @apply container mx-auto px-5 md:px-0;
 }
 
-/* .section-padding {
+.section-padding {
   @apply py-10 md:py-20;
-} */
+}
 
 .link-item {
   @apply relative;
@@ -24,7 +24,7 @@
 
 /* slider */
 .slider {
-  height: 100vh;
+  height: calc(100vh-5rem);
   width: 300vw;
   display: flex;
   transition: 1s ease;
