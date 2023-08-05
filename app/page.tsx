@@ -1,3 +1,4 @@
+import Gallery from "@/components/Gallery";
 import Hero from "@/components/Hero";
 import MartialsArt from "@/components/Martialsart";
 
@@ -6,6 +7,7 @@ const HomePage = () => {
     <main>
       <Hero />
       <MartialsArt />
+      <Gallery />
     </main>
   );
 };
