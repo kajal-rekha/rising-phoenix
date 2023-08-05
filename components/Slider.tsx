@@ -46,12 +46,12 @@ const Slide = () => {
   return (
     <div className="frame relative">
       <div
-        className="slider mt-20"
+        className="slider mt-20 "
         style={{ transform: `translateX(-${100 * currentSlide}vw)` }}
       >
         {data.map((image) => (
           <div
-            className="slide wrapper h-full grid grid-cols md:grid-cols-2 gap-10 overflow-hidden"
+            className="slide wrapper h-full grid grid-cols md:grid-cols-2 gap-10 overflow-hidden border-b border-dark/10"
             key={image.id}
           >
             <div className="slide-texts flex flex-col items-start justify-center w-full h-full gap-5 text-light/80">
@@ -81,7 +81,7 @@ const Slide = () => {
           </div>
         ))}
       </div>
-      <div className="btns absolute  w-screen justify-center bottom-0 mx-auto  z-[1] text-light/80 text-2xl flex gap-10 ">
+      <div className="btns absolute  w-screen justify-center bottom-20 mx-auto z-[1] text-light/80 text-2xl flex gap-10 ">
         <button
           onClick={prevSlide}
           className="prev-btn w-12 h-10 lg:h-12 lg:w-16 flex justify-center items-center bg-accant1 border border-light/80 hover:bg-accant1/75 hover:text-light/80 duration-300"

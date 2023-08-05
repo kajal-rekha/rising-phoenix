@@ -24,13 +24,8 @@ const Navbar = () => {
               </Link>
             </li>
             <li>
-              <Link href="/about" className="link-item">
-                About
-              </Link>
-            </li>
-            <li>
-              <Link href="/instructor" className="link-item">
-                Instructore
+              <Link href="/#martialsArt" className="link-item">
+                MartialsArt
               </Link>
             </li>
             <li>
@@ -39,8 +34,18 @@ const Navbar = () => {
               </Link>
             </li>
             <li>
+              <Link href="/instructor" className="link-item">
+                Instructore
+              </Link>
+            </li>
+            <li>
               <Link href="/faq" className="link-item">
                 Faq
+              </Link>
+            </li>
+            <li>
+              <Link href="/about" className="link-item">
+                About
               </Link>
             </li>
             <li>
