@@ -39,7 +39,7 @@ const Navbar = () => {
               </Link>
             </li>
             <li>
-              <Link href="/faq" className="link-item">
+              <Link href="/#faq" className="link-item">
                 Faq
               </Link>
             </li>

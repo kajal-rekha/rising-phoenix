@@ -1,3 +1,4 @@
+import Faq from "@/components/Faq";
 import Gallery from "@/components/Gallery";
 import Hero from "@/components/Hero";
 import Intstructor from "@/components/Intstructor";
@@ -10,6 +11,7 @@ const HomePage = () => {
       <MartialsArt />
       <Gallery />
       <Intstructor />
+      <Faq />
     </main>
   );
 };

@@ -36,11 +36,14 @@ const data = [
 
 const Intstructor = () => {
   return (
-    <section id="instructor" className="wrapper section-padding ">
+    <section
+      id="instructor"
+      className="section-padding border-b border-light/20"
+    >
       <h2 className="text-accant1 text-3xl font-medium text-center">
         Our Instructore
       </h2>
-      <div className="cards grid grid-cols md:grid-cols-2 xl:grid-cols-3 gap-10 mt-20 text-light/90">
+      <div className=" wrapper cards grid grid-cols md:grid-cols-2 xl:grid-cols-3 gap-10 mt-20 text-light/90">
         {data.map((image) => (
           <div
             key={image.id}
