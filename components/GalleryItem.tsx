@@ -73,7 +73,7 @@ const GalleryItem = () => {
         {data.map((image) => (
           <div
             key={image.id}
-            className="w-full h-[25rem] rounded-xl overflow-hidden  hover:scale-[1.1] duration-500"
+            className="w-full h-[25rem] rounded-xl overflow-hidden  "
           >
             <div>
               <Image
@@ -82,7 +82,7 @@ const GalleryItem = () => {
                 width={500}
                 height={500}
                 priority
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover hover:scale-125 duration-500"
               />
             </div>
           </div>

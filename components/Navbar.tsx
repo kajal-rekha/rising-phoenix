@@ -34,7 +34,7 @@ const Navbar = () => {
               </Link>
             </li>
             <li>
-              <Link href="/instructor" className="link-item">
+              <Link href="/#instructor" className="link-item">
                 Instructore
               </Link>
             </li>

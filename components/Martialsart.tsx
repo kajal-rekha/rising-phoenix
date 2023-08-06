@@ -1,4 +1,3 @@
-"use client";
 import SingleMartialArts from "./SingleMartialArts";
 
 const MartialsArt = () => {

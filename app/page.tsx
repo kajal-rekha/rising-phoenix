@@ -1,5 +1,6 @@
 import Gallery from "@/components/Gallery";
 import Hero from "@/components/Hero";
+import Intstructor from "@/components/Intstructor";
 import MartialsArt from "@/components/Martialsart";
 
 const HomePage = () => {
@@ -8,6 +9,7 @@ const HomePage = () => {
       <Hero />
       <MartialsArt />
       <Gallery />
+      <Intstructor />
     </main>
   );
 };
