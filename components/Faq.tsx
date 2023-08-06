@@ -31,43 +31,16 @@ const martialsArtFaq = [
   },
   {
     id: 5,
-    question:
-      "How often are the classes held, and what is the typical duration of each session?",
+    question: "How often are the classes held of each session?",
     answer:
       "Our classes are typically held multiple times a week to accommodate various schedules. The duration of each session varies depending on the age group and martial arts style but usually ranges from 45 minutes to 1 hour.",
   },
   {
     id: 6,
-    question:
-      "Are there any specific equipment or uniform requirements for students?",
+    question: "Are there any specific uniform requirements for students?",
     answer:
       "Yes, we have specific uniform requirements for each martial arts style. Additionally, some classes may require students to use protective gear, such as gloves or shin guards. We provide guidance on where to purchase the required equipment and uniforms.",
   },
-  // {
-  //   id: 7,
-  //   question: "Can I try a class before committing to a membership?",
-  //   answer:
-  //     "Yes, we encourage potential students to try a trial class before committing to a membership. It gives you the opportunity to experience our training environment and see if our academy is the right fit for you.",
-  // },
-  // {
-  //   id: 8,
-  //   question: "What qualifications and experience do your instructors have?",
-  //   answer:
-  //     "Our instructors are highly qualified and experienced martial artists with extensive training and teaching backgrounds. They hold certifications from reputable martial arts organizations and are dedicated to helping students achieve their goals.",
-  // },
-  // {
-  //   id: 9,
-  //   question: "How much does it cost to enroll in the martial arts program?",
-  //   answer:
-  //     "The cost of enrollment may vary depending on the program and the number of classes attended per week. We offer flexible membership options and pricing plans. Please contact us for detailed pricing information.",
-  // },
-  // {
-  //   id: 10,
-  //   question:
-  //     "Do you offer any special programs for self-defense or competition training?",
-  //   answer:
-  //     " Yes, we offer specialized self-defense classes that focus on practical techniques for real-life situations. Additionally, we provide competition training for those interested in participating in martial arts tournaments and events.",
-  // },
 ];
 const Faq = () => {
   const [open, setOpen] = useState(null);
@@ -80,7 +53,7 @@ const Faq = () => {
   };
 
   return (
-    <section id="faq" className=" section-padding">
+    <section id="faq" className=" section-padding border-b border-light/20">
       <h2 className="uppercase text-3xl font-semibold text-accant1 text-center">
         faq
       </h2>
@@ -96,13 +69,13 @@ const Faq = () => {
         </div>
         <div>
           {martialsArtFaq.map((faq, index) => (
-            <div key={faq.id} className="w-full mx-auto">
+            <div key={faq.id} className="w-full">
               <div
                 className={`faq-item flex justify-between mt-6 bg-dark items-center p-3 shadow-sm shadow-light/30 rounded-md  ${
                   open === index && "text-light/80 font-semibold"
                 }`}
               >
-                <h3 className="text-md">0{faq.id + " . " + faq.question}</h3>
+                <h3 className="text-lg">0{faq.id + " . " + faq.question}</h3>
                 <span
                   onClick={() => toggle(index)}
                   className="text-xl cursor-pointer"
