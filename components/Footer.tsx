@@ -16,12 +16,12 @@ const Footer = () => {
           <div className="w-full">
             <Link
               href="/"
-              className="text-2xl font-semibold text-light/90"
+              className="text-2xl font-semibold text-light/80"
               data-aos="fade-up"
             >
               Rising Phoenix
             </Link>
-            <p className="text-lg text-light/80 mt-5 w-full leading-8">
+            <p className="text-lg text-light/75 mt-5 w-full leading-8">
               Rising Phoenix Martial Art Academy cultivates inner strength,
               empowering students through disciplined training and fostering
               resilience.
@@ -59,7 +59,9 @@ const Footer = () => {
           </div>
 
           <div className="w-full ml-28">
-            <h2 className="text-2xl font-semibold text-white mb-4">Support</h2>
+            <h2 className="text-2xl font-semibold text-light/80 mb-4">
+              More Links
+            </h2>
             <ul>
               <li>
                 <Link href="/#faq" className="link-item">
