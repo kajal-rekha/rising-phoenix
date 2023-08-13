@@ -2,13 +2,18 @@
 
 import Link from "next/link";
 import Button from "./Button";
-//import { motion } from "framer-motion";
-//import { getTransition } from "@/utils/getTransition";
+import { motion } from "framer-motion";
+import { getTransition } from "@/utils/getTransition";
 
 const Navbar = () => {
   return (
     <header className=" h-20 fixed top-0 left-0 right-0 bg-dark backdrop-blur-lg border-b border-dark/75 z-[100]">
-      <div className="wrapper w-full h-full flex justify-between items-center text-light/80 ">
+      <motion.div
+        initial={{ y: "-100%" }}
+        animate={{ y: 0 }}
+        transition={getTransition(0.6)}
+        className="wrapper w-full h-full flex justify-between items-center text-light/80 "
+      >
         {/* NAV LEFT */}
         <nav>
           <Link href="/" className="text-xl font-semibold link-item">
@@ -59,7 +64,7 @@ const Navbar = () => {
         <nav className=" items-center text-lg">
           <Button href="/join now" placeholder="Join Now" color="green" />
         </nav>
-      </div>
+      </motion.div>
     </header>
   );
 };

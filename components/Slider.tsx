@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { MdArrowBackIosNew, MdArrowForwardIos } from "react-icons/md";
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 const data = [
   {
@@ -56,10 +57,12 @@ const Slider = () => {
             style={{ backgroundImage: `url(${image.src})` }}
           >
             <div className="slide-texts  -mt-10 wrapper flex flex-col gap-5 items-start justify-center  h-full text-light/80">
-              <h1 className="text-4xl  w-[70vw] md:text-5xl lg:text-6xl font-bold text-accant1 space-font  uppercase overflow-hidden  ">
-                {image.headline}
-              </h1>
-              <p className="text-sm md:text-lg w-[70vw]">{image.body}</p>
+              <motion.div>
+                <h1 className="text-4xl  w-[70vw] md:text-5xl lg:text-6xl font-bold text-accant1 space-font  uppercase overflow-hidden">
+                  {image.headline}
+                </h1>
+              </motion.div>
+              <p className="text-sm md:text-lg w-[60vw]">{image.body}</p>
 
               <div className="mt-3">
                 <button className="bg-accant1 text-light/80 py-3 px-6 rounded-lg w-full hover:bg-accant1/75 duration-300">
