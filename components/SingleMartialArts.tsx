@@ -2,6 +2,8 @@
 
 import Button from "./Button";
 import Image from "next/image";
+import { motion } from "framer-motion";
+import { getTransition, shutterUp } from "@/utils/getTransition";
 
 const data = [
   {
@@ -54,7 +56,11 @@ const SingleMartialArts = () => {
             key={martialArt.id}
             className=" grid grid-cols md:grid-cols-2 flex-col-reverse items-center justify-center gap-10 mt-24"
           >
-            <div
+            <motion.div
+              variants={shutterUp()}
+              initial="from"
+              whileInView="to"
+              transition={getTransition(0.6)}
               className={`flex flex-col gap-10 ${
                 martialArt.id % 2 === 0 ? "order-last" : null
               }`}
@@ -77,16 +83,23 @@ const SingleMartialArts = () => {
                   color="green"
                 />
               </div>
-            </div>
-            <div className="images w-[80%] h-[80%]">
-              <Image
-                src={martialArt.src}
-                alt={martialArt.name}
-                height={500}
-                width={500}
-                className="w-full h-full rounded-lg"
-              />
-            </div>
+            </motion.div>
+            <motion.div
+              variants={shutterUp()}
+              initial="from"
+              whileInView="to"
+              transition={getTransition(0.6)}
+            >
+              <div className="images w-[80%] h-[80%]">
+                <Image
+                  src={martialArt.src}
+                  alt={martialArt.name}
+                  height={500}
+                  width={500}
+                  className="w-full h-full rounded-lg"
+                />
+              </div>
+            </motion.div>
           </div>
         ))}
       </div>
