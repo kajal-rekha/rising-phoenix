@@ -11,7 +11,7 @@ const Navbar = () => {
       <motion.div
         initial={{ y: "-100%" }}
         animate={{ y: 0 }}
-        transition={getTransition(0.6)}
+        transition={getTransition(0.2)}
         className="wrapper w-full h-full flex justify-between items-center text-light/80 "
       >
         {/* NAV LEFT */}
