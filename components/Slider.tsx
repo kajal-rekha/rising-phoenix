@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { MdArrowBackIosNew, MdArrowForwardIos } from "react-icons/md";
 import { motion } from "framer-motion";
-import { getTransition } from "@/utils/getTransition";
+import { getTransition, shutterUp } from "@/utils/getTransition";
 
 const data = [
   {
@@ -58,8 +58,9 @@ const Slider = () => {
           >
             <div className="slide-texts  -mt-10 wrapper flex flex-col gap-5 items-start justify-center  h-full text-light/80">
               <motion.div
-                initial={{ y: "100%" }}
-                animate={{ y: 0 }}
+                variants={shutterUp()}
+                initial="from"
+                whileInView="to"
                 transition={getTransition(0.4)}
               >
                 <h1 className="text-4xl  w-[70vw] md:text-5xl lg:text-6xl font-bold text-accant1 space-font  uppercase overflow-hidden">
@@ -69,8 +70,9 @@ const Slider = () => {
                 <p className="text-sm md:text-lg w-[60vw]">{image.body}</p>
               </motion.div>
               <motion.div
-                initial={{ y: "100%" }}
-                animate={{ y: 0 }}
+                variants={shutterUp()}
+                initial="from"
+                whileInView="to"
                 transition={getTransition(0.6)}
                 className="mt-3"
               >
@@ -83,22 +85,34 @@ const Slider = () => {
         ))}
       </div>
       <div className="btns absolute  w-screen justify-center bottom-28 mx-auto z-[1] text-light/80 text-2xl flex gap-10 ">
-        <button
-          onClick={prevSlide}
-          className="prev-btn w-12 h-10 lg:h-12 lg:w-16 flex justify-center items-center bg-accant1 border border-light/80 hover:bg-accant1/75 hover:text-light/80 duration-300"
+        <motion.div
+          initial={{ x: "-1000%" }}
+          animate={{ x: 0 }}
+          transition={getTransition(0.8)}
         >
-          <span>
-            <MdArrowBackIosNew />
-          </span>
-        </button>
-        <button
-          onClick={nextSlide}
-          className="next-btn w-12 h-10 lg:h-12 lg:w-16 flex justify-center items-center bg-accant1 border border-light/80 hover:bg-accant1/75 hover:text-light/80 duration-300"
+          <button
+            onClick={prevSlide}
+            className="prev-btn w-12 h-10 lg:h-12 lg:w-16 flex justify-center items-center bg-accant1 border border-light/80 hover:bg-accant1/75 hover:text-light/80 duration-300"
+          >
+            <span>
+              <MdArrowBackIosNew />
+            </span>
+          </button>
+        </motion.div>
+        <motion.div
+          initial={{ x: "1000%" }}
+          animate={{ x: 0 }}
+          transition={getTransition(0.8)}
         >
-          <span>
-            <MdArrowForwardIos />
-          </span>
-        </button>
+          <button
+            onClick={nextSlide}
+            className="next-btn w-12 h-10 lg:h-12 lg:w-16 flex justify-center items-center bg-accant1 border border-light/80 hover:bg-accant1/75 hover:text-light/80 duration-300"
+          >
+            <span>
+              <MdArrowForwardIos />
+            </span>
+          </button>
+        </motion.div>
       </div>
     </div>
   );
