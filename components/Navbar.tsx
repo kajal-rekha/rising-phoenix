@@ -56,7 +56,7 @@ const Navbar = () => {
           </ul>
         </nav>
         {/* NAV RIGHT */}
-        <nav className=" items-center ">
+        <nav className=" items-center text-lg">
           <Button href="/join now" placeholder="Join Now" color="green" />
         </nav>
       </div>

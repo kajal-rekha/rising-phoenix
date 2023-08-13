@@ -10,7 +10,7 @@ const data = [
     martials_art: "Karate",
     description:
       "John Smith is a dedicated martial artist with over 10 years of experience in Karate. He has numerous regional and national championships and is passionate about teaching others the art of self-defense and discipline through Karate.",
-    cta: "View details",
+    cta: "view details",
   },
   {
     id: 2,
@@ -20,7 +20,7 @@ const data = [
     martials_art: "Taekwondo",
     description:
       "Emily Johnson is a skilled Taekwondo practitioner with a black belt rank. She has represented her country in international Taekwondo championships and believes in the mental and physical benefits that this martial art brings to people of all ages.",
-    cta: "View details",
+    cta: "view details",
   },
   {
     id: 3,
@@ -30,7 +30,7 @@ const data = [
     martials_art: "Brazilian Jiu-Jitsu",
     description:
       "Michael Anderson is a dedicated martial artist with over 10 years of experience in Karate. He has won numerous regional and national championships and is passionate about teaching others the art of self-defense and discipline through Karate.",
-    cta: "View details",
+    cta: "view details",
   },
 ];
 
@@ -40,7 +40,7 @@ const Intstructor = () => {
       id="instructor"
       className="section-padding border-b border-light/20"
     >
-      <h2 className="text-accant1 text-3xl font-medium text-center">
+      <h2 className="text-accant1 text-3xl font-medium text-center uppercase">
         Our Instructore
       </h2>
       <div className=" wrapper cards grid grid-cols md:grid-cols-2 xl:grid-cols-3 gap-10 mt-20 text-light/90">
@@ -68,7 +68,7 @@ const Intstructor = () => {
                 Martial Atrs: {image.martials_art}
               </p>
               <p>{image.description.substring(0, 100)}...</p>
-              <div className="pt-5 tracking-wide font-medium">
+              <div className="pt-5 tracking-wide">
                 <Button
                   href="/instructore"
                   placeholder={image.cta}

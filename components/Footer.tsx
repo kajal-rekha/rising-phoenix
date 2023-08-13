@@ -12,13 +12,9 @@ const Footer = () => {
   return (
     <footer className=" bg-dark section-padding">
       <div className="wrapper">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 pb-5  gap-10 md:gap-6 lg:gap-4">
+        <div className="grid grid-cols-1  lg:grid-cols-4 pb-5  gap-10 md:gap-6 lg:gap-4">
           <div className="w-full">
-            <Link
-              href="/"
-              className="text-2xl font-semibold text-light/80"
-              data-aos="fade-up"
-            >
+            <Link href="/" className="text-2xl font-semibold text-light/80">
               Rising Phoenix
             </Link>
             <p className="text-lg text-light/75 mt-5 w-full leading-8">
@@ -28,7 +24,7 @@ const Footer = () => {
             </p>
           </div>
 
-          <div className="w-full ml-28">
+          <div className="w-full xl:ml-28">
             <h2 className="text-2xl font-semibold text-light/80 mb-4">
               Quick Links
             </h2>
@@ -58,7 +54,7 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className="w-full ml-28">
+          <div className="w-full xl:ml-28">
             <h2 className="text-2xl font-semibold text-light/80 mb-4">
               More Links
             </h2>
@@ -82,7 +78,7 @@ const Footer = () => {
           </div>
 
           <div className="w-full ">
-            <div className=" flex flex-col justify-between gap-2 items-center">
+            <div className="flex flex-col justify-between gap-2">
               <h2 className="text-2xl font-semibold mb-4">Connect with us</h2>
               <div className="social-icons flex gap-5 text-2xl text-accant1">
                 <Link href="https://www.google.com/">

@@ -66,8 +66,8 @@ const data = [
 const GalleryItem = () => {
   return (
     <section className="wrapper section-padding">
-      <h2 className="text-accant1 text-3xl font-medium text-center">
-        Our Gallery
+      <h2 className="text-accant1 text-3xl font-medium text-center uppercase">
+        Gallery
       </h2>
       <div className="grid grid-cols md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-10 mt-20">
         {data.map((image) => (

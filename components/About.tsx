@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Button from "./Button";
 
 const About = () => {
   return (
@@ -17,9 +18,11 @@ const About = () => {
             skills,The platform boasts a
             team of accomplished and skilled martial artists who guide and
             instruct with precision, ensuring that each participant receives
-            personalized attention and guidance.`}
+            personalized attention and guidance. The platform's user-friendly interface and accessibility on various devices`}
           </p>
-          <p>{`Rising Phoenix's community aspect is also a highlight, fostering a sense of camaraderie among members through forums, discussions, and virtual events. The platform's user-friendly interface and accessibility on various devices make it convenient for users to engage in training anytime, anywhere.`}</p>
+          <div className="mt-8">
+            <Button href="/read more" placeholder="Read More" color="green" />
+          </div>
         </div>
         <div className="right">
           <Image

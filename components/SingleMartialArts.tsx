@@ -70,7 +70,7 @@ const SingleMartialArts = () => {
                 </h2>
                 <p className="text-lg">{martialArt.body}</p>
               </div>
-              <div className="py-3 px-6 -ml-5 text-lg font-medium">
+              <div className="py-3 px-6 -ml-5 text-lg">
                 <Button
                   href="/martialsArt"
                   placeholder={martialArt.cta}
