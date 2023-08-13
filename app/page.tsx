@@ -4,6 +4,7 @@ import Hero from "@/components/Hero";
 import Intstructor from "@/components/Intstructor";
 import MartialsArt from "@/components/Martialsart";
 import About from "@/components/About";
+import Contact from "@/components/Contact";
 
 const HomePage = () => {
   return (
@@ -14,6 +15,7 @@ const HomePage = () => {
       <Intstructor />
       <Faq />
       <About />
+      <Contact />
     </main>
   );
 };

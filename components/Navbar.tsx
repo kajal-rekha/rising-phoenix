@@ -49,7 +49,7 @@ const Navbar = () => {
               </Link>
             </li>
             <li>
-              <Link href="/contact" className="link-item">
+              <Link href="/#contact" className="link-item">
                 Contact
               </Link>
             </li>
