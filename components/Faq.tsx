@@ -4,6 +4,7 @@ import { useState } from "react";
 import Image from "next/image";
 import { AiOutlinePlus } from "react-icons/ai";
 import SectionTitle from "./SectionTitle";
+import { type } from "os";
 const martialsArtFaq = [
   {
     id: 1,
@@ -42,10 +43,22 @@ const martialsArtFaq = [
     answer:
       "Yes, we have specific uniform requirements for each martial arts style. Additionally, some classes may require students to use protective gear, such as gloves or shin guards. We provide guidance on where to purchase the required equipment and uniforms.",
   },
+  {
+    id: 7,
+    question: "What qualifications and experience do your instructors have?",
+    answer:
+      " Our instructors are highly qualified and experienced martial artists with extensive training and teaching backgrounds. They hold certifications from reputable martial arts organizations and are dedicated to helping students achieve their goals.",
+  },
+  {
+    id: 8,
+    question: "How much does it cost to enroll in the martial arts program?",
+    answer:
+      "The cost of enrollment may vary depending on the program and the number of classes attended per week. We offer flexible membership options and pricing plans. Please contact us for detailed pricing information.",
+  },
 ];
 const Faq = () => {
-  const [open, setOpen] = useState(null);
-  const toggle = (index) => {
+  const [open, setOpen] = useState<number | null>(null);
+  const toggle = (index: number) => {
     if (open === index) {
       return setOpen(null);
     } else {
@@ -56,14 +69,14 @@ const Faq = () => {
   return (
     <section id="faq" className=" section-padding border-b border-light/20">
       <SectionTitle title="faq" />
-      <div className="wrapper grid grid-col lg:grid-cols-2 items-center justify-center mt-20">
-        <div className="left image w-96 h-full">
+      <div className="wrapper grid grid-col lg:grid-cols-2 items-center justify-center mt-14">
+        <div className="left image w-[92%] h-[39rem] pt-5">
           <Image
-            src="https://res.cloudinary.com/dh0ado2ir/image/upload/v1691322702/FAQ-768x768_znwdth.png"
+            src="https://res.cloudinary.com/dh0ado2ir/image/upload/v1692014706/0_rrYwSyi7VeL0A-Mi_h98onj.png"
             alt="faq"
             width={800}
-            height={800}
-            className="w-full h-full"
+            height={1000}
+            className="w-full h-full rounded-lg"
           />
         </div>
         <div>
@@ -83,7 +96,7 @@ const Faq = () => {
                 </span>
               </div>
               {open === index && (
-                <div className="shadow-sm shadow-light/20 rounded-bl-md rounded-br-md bg-dark p-3">
+                <div className="shadow-sm shadow-light/20 rounded-md  bg-dark p-3 mt-2">
                   <p>{faq.answer}</p>
                 </div>
               )}
