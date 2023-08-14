@@ -2,8 +2,6 @@
 
 import { useState } from "react";
 import { MdArrowBackIosNew, MdArrowForwardIos } from "react-icons/md";
-import { motion } from "framer-motion";
-import { getTransition, shutterUp } from "@/utils/getTransition";
 
 const data = [
   {
@@ -58,70 +56,60 @@ const Slider = () => {
           >
             <div className="slide-texts  -mt-10 wrapper flex flex-col gap-5 items-start justify-center  h-full text-light/80">
               <div>
-                <motion.h1
-                  variants={shutterUp()}
-                  initial="from"
-                  whileInView="to"
-                  transition={getTransition(1)}
+                <h1
                   className="text-4xl  w-[70vw] md:text-5xl lg:text-6xl font-bold text-accant1 space-font  uppercase overflow-hidden"
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
                 >
                   {image.headline}
-                </motion.h1>
+                </h1>
 
-                <motion.p
-                  variants={shutterUp()}
-                  initial="from"
-                  whileInView="to"
-                  transition={getTransition(0.8)}
+                <p
                   className="text-lg mt-5 md:text-xl w-[50vw]"
+                  data-aos="fade-up"
+                  data-aos-duration="2000"
                 >
                   {image.body}
-                </motion.p>
+                </p>
               </div>
-              <motion.div
-                variants={shutterUp()}
-                initial="from"
-                whileInView="to"
-                transition={getTransition(0.6)}
-                className="mt-3"
-              >
+              <div className="mt-3" data-aos="fade-up" data-aos-duration="3000">
                 <button className="bg-accant1 text-light/80 py-3 px-6 rounded-lg w-full text-lg hover:bg-accant1/75 duration-300">
                   {image.cta}
                 </button>
-              </motion.div>
+              </div>
             </div>
           </div>
         ))}
       </div>
-      <div className="btns absolute w-screen justify-center bottom-14 xl:bottom-28 mx-auto z-[1] text-light/80 text-2xl flex gap-10 ">
-        <motion.div
-          initial={{ x: "-1000%" }}
-          animate={{ x: 0 }}
-          transition={getTransition(0.8)}
-        >
+      <div className="btns absolute w-screen justify-center bottom-14 xl:bottom-28 mx-auto z-[1] text-light/80 text-2xl flex gap-8 ">
+        <div>
           <button
             onClick={prevSlide}
             className="prev-btn w-12 h-10 lg:h-12 lg:w-16 flex justify-center items-center bg-accant1 border border-light/80 hover:bg-accant1/75 hover:text-light/80 duration-300"
+            data-aos="fade-right"
+            data-aos-anchor="#example-anchor"
+            data-aos-offset="500"
+            data-aos-duration="1500"
           >
             <span>
               <MdArrowBackIosNew />
             </span>
           </button>
-        </motion.div>
-        <motion.div
-          initial={{ x: "1000%" }}
-          animate={{ x: 0 }}
-          transition={getTransition(0.8)}
-        >
+        </div>
+        <div>
           <button
             onClick={nextSlide}
             className="next-btn w-12 h-10 lg:h-12 lg:w-16 flex justify-center items-center bg-accant1 border border-light/80 hover:bg-accant1/75 hover:text-light/80 duration-300"
+            data-aos="fade-left"
+            data-aos-anchor="#example-anchor"
+            data-aos-offset="500"
+            data-aos-duration="1500"
           >
             <span>
               <MdArrowForwardIos />
             </span>
           </button>
-        </motion.div>
+        </div>
       </div>
     </div>
   );
