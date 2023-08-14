@@ -53,22 +53,31 @@ const Slider = () => {
         {data.map((image) => (
           <div
             key={image.id}
-            className="slide"
+            className="slide w-full h-full object-cover"
             style={{ backgroundImage: `url(${image.src})` }}
           >
             <div className="slide-texts  -mt-10 wrapper flex flex-col gap-5 items-start justify-center  h-full text-light/80">
-              <motion.div
-                variants={shutterUp()}
-                initial="from"
-                whileInView="to"
-                transition={getTransition(0.4)}
-              >
-                <h1 className="text-4xl  w-[70vw] md:text-5xl lg:text-6xl font-bold text-accant1 space-font  uppercase overflow-hidden">
+              <div>
+                <motion.h1
+                  variants={shutterUp()}
+                  initial="from"
+                  whileInView="to"
+                  transition={getTransition(1)}
+                  className="text-4xl  w-[70vw] md:text-5xl lg:text-6xl font-bold text-accant1 space-font  uppercase overflow-hidden"
+                >
                   {image.headline}
-                </h1>
+                </motion.h1>
 
-                <p className="text-sm md:text-lg w-[60vw]">{image.body}</p>
-              </motion.div>
+                <motion.p
+                  variants={shutterUp()}
+                  initial="from"
+                  whileInView="to"
+                  transition={getTransition(0.8)}
+                  className="text-lg mt-5 md:text-xl w-[50vw]"
+                >
+                  {image.body}
+                </motion.p>
+              </div>
               <motion.div
                 variants={shutterUp()}
                 initial="from"
@@ -76,7 +85,7 @@ const Slider = () => {
                 transition={getTransition(0.6)}
                 className="mt-3"
               >
-                <button className="bg-accant1 text-light/80 py-3 px-6 rounded-lg w-full hover:bg-accant1/75 duration-300">
+                <button className="bg-accant1 text-light/80 py-3 px-6 rounded-lg w-full text-lg hover:bg-accant1/75 duration-300">
                   {image.cta}
                 </button>
               </motion.div>
@@ -84,7 +93,7 @@ const Slider = () => {
           </div>
         ))}
       </div>
-      <div className="btns absolute  w-screen justify-center bottom-28 mx-auto z-[1] text-light/80 text-2xl flex gap-10 ">
+      <div className="btns absolute w-screen justify-center bottom-14 xl:bottom-28 mx-auto z-[1] text-light/80 text-2xl flex gap-10 ">
         <motion.div
           initial={{ x: "-1000%" }}
           animate={{ x: 0 }}

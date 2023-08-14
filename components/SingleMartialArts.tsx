@@ -53,51 +53,74 @@ const SingleMartialArts = () => {
         {data.map((martialArt) => (
           <div
             key={martialArt.id}
-            className=" grid grid-cols md:grid-cols-2 flex-col-reverse items-center justify-center gap-10 mt-24"
+            className=" grid grid-cols lg:grid-cols-2 flex-col-reverse items-center justify-center gap-10 mt-24"
           >
-            <motion.div
-              variants={shutterDown()}
-              initial="from"
-              whileInView="to"
-              transition={getTransition(0.6)}
+            <div
               className={`flex flex-col gap-10 ${
                 martialArt.id % 2 === 0 ? "order-last" : null
               }`}
             >
-              <span className="text-6xl lg:text-8xl text-light/10 font-bold">
-                0{martialArt.id}
-              </span>
+              <motion.div
+                variants={shutterDown()}
+                initial="from"
+                whileInView="to"
+                transition={getTransition(0.4)}
+              >
+                <span className="text-7xl lg:text-9xl text-light/10 font-bold">
+                  0{martialArt.id}
+                </span>
+              </motion.div>
 
               <div>
-                <h2 className="text-2xl tracking-wide text-accant1 font-medium">
+                <motion.h2
+                  className="text-3xl tracking-wide text-accant1 font-medium"
+                  variants={shutterDown()}
+                  initial="from"
+                  whileInView="to"
+                  transition={getTransition(0.6)}
+                >
                   {" "}
                   {martialArt.name}
-                </h2>
-                <p className="text-lg">{martialArt.body}</p>
+                </motion.h2>
+                <motion.p
+                  variants={shutterDown()}
+                  initial="from"
+                  whileInView="to"
+                  transition={getTransition(0.8)}
+                  className="text-xl"
+                >
+                  {martialArt.body}
+                </motion.p>
               </div>
-              <div className="py-3 px-6 -ml-5 text-lg">
+              <motion.div
+                variants={shutterDown()}
+                initial="from"
+                whileInView="to"
+                transition={getTransition(0.8)}
+                className="py-3 px-6 -ml-5 text-lg"
+              >
                 <Button
                   href="/martialsArt"
                   placeholder={martialArt.cta}
                   color="green"
                 />
-              </div>
-            </motion.div>
+              </motion.div>
+            </div>
+
             <motion.div
-              variants={shutterDown()}
+              variants={shutterUp()}
               initial="from"
               whileInView="to"
-              transition={getTransition(0.6)}
+              transition={getTransition(1)}
+              className="images w-[85%] h-[90%]"
             >
-              <div className="images w-[80%] h-[80%]">
-                <Image
-                  src={martialArt.src}
-                  alt={martialArt.name}
-                  height={500}
-                  width={500}
-                  className="w-full h-full rounded-lg"
-                />
-              </div>
+              <Image
+                src={martialArt.src}
+                alt={martialArt.name}
+                height={500}
+                width={500}
+                className="w-full h-full rounded-lg"
+              />
             </motion.div>
           </div>
         ))}
