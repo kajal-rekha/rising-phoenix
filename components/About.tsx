@@ -1,12 +1,11 @@
 import Image from "next/image";
 import Button from "./Button";
+import SectionTitle from "./SectionTitle";
 
 const About = () => {
   return (
     <section id="about" className=" section-padding border-b border-light/20">
-      <h2 className="uppercase text-3xl font-semibold text-accant1 text-center">
-        About Rising Phoenix
-      </h2>
+      <SectionTitle title="about us" />
       <div className="wrapper grid grid-col lg:grid-cols-2 gap-14 items-center justify-center mt-20">
         <div className="left text-light/80 text-lg">
           <p>

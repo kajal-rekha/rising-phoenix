@@ -15,7 +15,7 @@ export const shutterDown = () => {
 
 export const shutterUp = () => {
   return {
-    from: { y: 200, opacity: 0 },
+    from: { y: -200, opacity: 0 },
     to: { y: 0, opacity: 1 },
   };
 };

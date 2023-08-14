@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Button from "./Button";
+import SectionTitle from "./SectionTitle";
 
 const data = [
   {
@@ -40,9 +41,7 @@ const Intstructor = () => {
       id="instructor"
       className="section-padding border-b border-light/20"
     >
-      <h2 className="text-accant1 text-3xl font-medium text-center uppercase">
-        Our Instructore
-      </h2>
+      <SectionTitle title="Our Instructore" />
       <div className=" wrapper cards grid grid-cols md:grid-cols-2 xl:grid-cols-3 gap-10 mt-20 text-light/90">
         {data.map((image) => (
           <div

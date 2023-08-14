@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Image from "next/image";
 import { AiOutlinePlus } from "react-icons/ai";
+import SectionTitle from "./SectionTitle";
 const martialsArtFaq = [
   {
     id: 1,
@@ -54,9 +55,7 @@ const Faq = () => {
 
   return (
     <section id="faq" className=" section-padding border-b border-light/20">
-      <h2 className="uppercase text-3xl font-semibold text-accant1 text-center">
-        faq
-      </h2>
+      <SectionTitle title="faq" />
       <div className="wrapper grid grid-col lg:grid-cols-2 items-center justify-center mt-20">
         <div className="left image w-96 h-full">
           <Image

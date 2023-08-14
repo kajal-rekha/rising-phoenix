@@ -3,6 +3,7 @@
 import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import { toast } from "react-toastify";
+import SectionTitle from "./SectionTitle";
 
 const Contact = () => {
   const [formData, setFormData] = useState<{
@@ -59,9 +60,7 @@ const Contact = () => {
 
   return (
     <section id="contact" className="contact wrapper section-padding">
-      <h2 className="uppercase text-3xl font-semibold text-accant1 text-center">
-        Contact us
-      </h2>
+      <SectionTitle title="contact us" />
       <form
         ref={formRef}
         onSubmit={handleSubmit}

@@ -3,7 +3,8 @@
 import Button from "./Button";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { getTransition, shutterUp } from "@/utils/getTransition";
+import { getTransition, shutterDown, shutterUp } from "@/utils/getTransition";
+import SectionTitle from "./SectionTitle";
 
 const data = [
   {
@@ -47,9 +48,7 @@ const data = [
 const SingleMartialArts = () => {
   return (
     <section className="wrapper section-padding">
-      <h2 className="text-3xl uppercase text-center text-accant1 font-semibold tracking-wide">
-        different kinds of martials arts
-      </h2>
+      <SectionTitle title="different kinds of martials art" />
       <div>
         {data.map((martialArt) => (
           <div
@@ -57,7 +56,7 @@ const SingleMartialArts = () => {
             className=" grid grid-cols md:grid-cols-2 flex-col-reverse items-center justify-center gap-10 mt-24"
           >
             <motion.div
-              variants={shutterUp()}
+              variants={shutterDown()}
               initial="from"
               whileInView="to"
               transition={getTransition(0.6)}
@@ -85,7 +84,7 @@ const SingleMartialArts = () => {
               </div>
             </motion.div>
             <motion.div
-              variants={shutterUp()}
+              variants={shutterDown()}
               initial="from"
               whileInView="to"
               transition={getTransition(0.6)}
