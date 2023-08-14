@@ -69,8 +69,8 @@ const Faq = () => {
   return (
     <section id="faq" className=" section-padding border-b border-light/20">
       <SectionTitle title="faq" />
-      <div className="wrapper grid grid-col lg:grid-cols-2 items-center justify-center mt-14">
-        <div className="left image w-[92%] h-[39rem] pt-5">
+      <div className="wrapper grid grid-col lg:grid-cols-2 gap-10 items-center justify-center mt-14">
+        <div className="left image w-[100%] h-[100%] pt-5">
           <Image
             src="https://res.cloudinary.com/dh0ado2ir/image/upload/v1692014706/0_rrYwSyi7VeL0A-Mi_h98onj.png"
             alt="faq"
