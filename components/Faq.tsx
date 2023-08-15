@@ -69,12 +69,17 @@ const Faq = () => {
     <section id="faq" className="section-padding border-b border-light/20">
       <SectionTitle title="Faq" />
       <div className="wrapper grid grid-col lg:grid-cols-2 gap-10 items-center justify-center mt-14">
-        <div className="left image w-[100%] h-[100%] pt-5">
+        <div
+          className="left image w-[100%] h-[100%] pt-5"
+          data-aos="fade-up-right"
+          data-aos-duration="1500"
+        >
           <Image
             src="https://res.cloudinary.com/dh0ado2ir/image/upload/v1692014706/0_rrYwSyi7VeL0A-Mi_h98onj.png"
             alt="faq"
             width={800}
             height={1000}
+            priority
             className="w-full h-full rounded-lg"
           />
         </div>
@@ -82,6 +87,9 @@ const Faq = () => {
           {martialsArtFaq.map((faq, index) => (
             <div key={faq.id} className="w-full">
               <div
+                data-aos="fade-up"
+                data-aos-easing="linear"
+                data-aos-duration="1000"
                 className={`faq-item flex justify-between mt-6 bg-dark items-center p-3 shadow-sm shadow-light/30 rounded-md  ${
                   open === index && "text-light/80 font-semibold"
                 }`}

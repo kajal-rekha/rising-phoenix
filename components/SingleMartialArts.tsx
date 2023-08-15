@@ -107,6 +107,7 @@ const SingleMartialArts = () => {
                 alt={martialArt.name}
                 height={500}
                 width={500}
+                priority
                 className="w-full h-full rounded-lg"
               />
             </div>

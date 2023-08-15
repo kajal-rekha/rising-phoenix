@@ -74,7 +74,11 @@ const GalleryItem = () => {
             key={image.id}
             className="w-full h-[25rem] rounded-xl overflow-hidden  "
           >
-            <div>
+            <div
+              data-aos="fade-down"
+              data-aos-easing="linear"
+              data-aos-duration="1000"
+            >
               <Image
                 src={image.src}
                 alt={image.alt}

@@ -48,7 +48,12 @@ const Intstructor = () => {
             key={image.id}
             className="card w-full h-[34rem] rounded-xl overflow-hidden  shadow-lg"
           >
-            <div className="h-[18rem] object-cover overflow-hidden">
+            <div
+              className="h-[18rem] object-cover overflow-hidden"
+              data-aos="fade-down"
+              data-aos-easing="linear"
+              data-aos-duration="1000"
+            >
               <Image
                 src={image.src}
                 alt={image.alt}
@@ -59,15 +64,36 @@ const Intstructor = () => {
               />
             </div>
             <div className="card-details p-5 space-y-2 text-lg">
-              <h3 className="tracking-wide">
+              <h3
+                className="tracking-wide"
+                data-aos="fade-up"
+                data-aos-easing="linear"
+                data-aos-duration="1500"
+              >
                 Intructore:{" "}
                 <span className="text-accant1 font-semibold">{image.name}</span>
               </h3>
-              <p className="tracking-wide">
+              <p
+                className="tracking-wide"
+                data-aos="fade-up"
+                data-aos-easing="linear"
+                data-aos-duration="2000"
+              >
                 Martial Atrs: {image.martials_art}
               </p>
-              <p>{image.description.substring(0, 100)}...</p>
-              <div className="pt-5 tracking-wide">
+              <p
+                data-aos="fade-up"
+                data-aos-easing="linear"
+                data-aos-duration="3000"
+              >
+                {image.description.substring(0, 100)}...
+              </p>
+              <div
+                className="pt-5 tracking-wide"
+                data-aos="fade-up"
+                data-aos-easing="linear"
+                data-aos-duration="3000"
+              >
                 <Button
                   href="/instructore"
                   placeholder={image.cta}

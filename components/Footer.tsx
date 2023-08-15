@@ -14,10 +14,16 @@ const Footer = () => {
       <div className="wrapper">
         <div className="grid grid-cols-1  lg:grid-cols-4 pb-5  gap-10 md:gap-6 lg:gap-4">
           <div className="w-full">
-            <Link href="/" className="text-2xl font-semibold text-light/80">
-              Rising Phoenix
-            </Link>
-            <p className="text-lg text-light/75 mt-5 w-full leading-8">
+            <div data-aos="fade-down" data-aos-duration="1000">
+              <Link href="/" className="text-2xl font-semibold text-light/80">
+                Rising Phoenix
+              </Link>
+            </div>
+            <p
+              data-aos="fade-up"
+              data-aos-duration="1500"
+              className="text-lg text-light/75 mt-5 w-full leading-8"
+            >
               Rising Phoenix Martial Art Academy cultivates inner strength,
               empowering students through disciplined training and fostering
               resilience.
@@ -25,11 +31,15 @@ const Footer = () => {
           </div>
 
           <div className="w-full xl:ml-28">
-            <h2 className="text-2xl font-semibold text-light/80 mb-4">
+            <h2
+              className="text-2xl font-semibold text-light/80 mb-4"
+              data-aos="fade-down"
+              data-aos-duration="1000"
+            >
               Quick Links
             </h2>
             <div className="text-light/75 gap-3 flex flex-col">
-              <ul>
+              <ul data-aos="fade-up" data-aos-duration="1500">
                 <li>
                   <Link href="/" className="link-item">
                     Home
@@ -55,10 +65,14 @@ const Footer = () => {
           </div>
 
           <div className="w-full xl:ml-28">
-            <h2 className="text-2xl font-semibold text-light/80 mb-4">
+            <h2
+              data-aos="fade-down"
+              data-aos-duration="1000"
+              className="text-2xl font-semibold text-light/80 mb-4"
+            >
               More Links
             </h2>
-            <ul>
+            <ul data-aos="fade-up" data-aos-duration="1500">
               <li>
                 <Link href="/#faq" className="link-item">
                   Faq
@@ -79,8 +93,18 @@ const Footer = () => {
 
           <div className="w-full ">
             <div className="flex flex-col justify-between gap-2">
-              <h2 className="text-2xl font-semibold mb-4">Connect with us</h2>
-              <div className="social-icons flex gap-5 text-2xl text-accant1">
+              <h2
+                data-aos="fade-down"
+                data-aos-duration="1000"
+                className="text-2xl font-semibold mb-4"
+              >
+                Connect with us
+              </h2>
+              <div
+                className="social-icons flex gap-5 text-2xl text-accant1"
+                data-aos="fade-left"
+                data-aos-duration="1500"
+              >
                 <Link href="https://www.google.com/">
                   <FaFacebookF />
                 </Link>
@@ -98,9 +122,9 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="justify-center border-t border-light/20 pt-14">
+      <div className="justify-center border-t border-light/20 pt-10">
         <div className="lg:w-full md:w-2/3">
-          <p className="text-center text-light/80 text-lg mt-8">
+          <p className="text-center text-light/80 text-lg mt-5">
             &copy; {new Date().getFullYear()} Rising Phoenix. All rights
             reserved.
           </p>

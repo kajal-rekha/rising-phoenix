@@ -68,6 +68,8 @@ const Contact = () => {
       >
         <div className="form-control flex flex-col gap-2">
           <input
+            data-aos="fade-right"
+            data-aos-duration="1000"
             type="text"
             name="fullname"
             placeholder="Full Name"
@@ -81,6 +83,8 @@ const Contact = () => {
         </div>
         <div className="form-control flex flex-col gap-2">
           <input
+            data-aos="fade-left"
+            data-aos-duration="1000"
             type="email"
             name="email"
             placeholder="Email Address"
@@ -95,6 +99,8 @@ const Contact = () => {
 
         <div className="form-control flex flex-col gap-2">
           <textarea
+            data-aos="fade-right"
+            data-aos-duration="1000"
             placeholder="Message"
             name="message"
             required
@@ -105,7 +111,11 @@ const Contact = () => {
             className="message border border-light/40 focus:border-light/60  bg-transparent rounded-xl outline-none py-8 px-12 resize-none duration-300"
           />
         </div>
-        <div className="submit  rounded-xl   py-5 px-8 text-center overflow-hidden border border-light/40 bg-transparent  duration-300">
+        <div
+          className="submit  rounded-xl   py-5 px-8 text-center overflow-hidden border border-light/40 bg-transparent  duration-300"
+          data-aos="fade-left"
+          data-aos-duration="1000"
+        >
           <button role="link" type="submit" className="text-light/80 uppercase">
             Send
           </button>
