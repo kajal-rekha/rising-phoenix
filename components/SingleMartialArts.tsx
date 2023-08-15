@@ -65,24 +65,45 @@ const SingleMartialArts = () => {
                 martialArt.id % 2 === 0 ? "order-last" : null
               }`}
             >
-              <div>
+              <div data-aos="fade-up" data-aos-duration="1000">
                 <span className="text-7xl lg:text-9xl text-light/10 font-bold">
                   0{martialArt.id}
                 </span>
               </div>
 
               <div>
-                <h2 className="text-3xl tracking-wide text-accant1 font-medium">
+                <h2
+                  data-aos="fade-up"
+                  data-aos-duration="1500"
+                  className="text-3xl tracking-wide text-accant1 font-medium"
+                >
                   {" "}
                   {martialArt.name}
                 </h2>
-                <p className="text-xl">{martialArt.body1}</p>
+                <p
+                  data-aos="fade-up"
+                  data-aos-duration="2000"
+                  className="text-xl"
+                >
+                  {martialArt.body1}
+                </p>
 
-                <p className="text-xl mt-2">{martialArt.body2}</p>
+                <p
+                  data-aos="fade-up"
+                  data-aos-duration="3000"
+                  className="text-xl mt-2"
+                >
+                  {martialArt.body2}
+                </p>
               </div>
             </div>
 
-            <div className="images w-[100%] h-[100%]">
+            <div
+              data-aos="flip-left"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="2000"
+              className="images w-[100%] h-[100%]"
+            >
               <Image
                 src={martialArt.src}
                 alt={martialArt.name}
