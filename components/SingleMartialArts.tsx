@@ -71,31 +71,29 @@ const SingleMartialArts = () => {
                 </span>
               </div>
 
-              <div>
-                <h2
-                  data-aos="fade-up"
-                  data-aos-duration="1500"
-                  className="text-3xl tracking-wide text-accant1 font-medium"
-                >
-                  {" "}
-                  {martialArt.name}
-                </h2>
-                <p
-                  data-aos="fade-up"
-                  data-aos-duration="2000"
-                  className="text-xl"
-                >
-                  {martialArt.body1}
-                </p>
+              <h2
+                data-aos="fade-up"
+                data-aos-duration="1500"
+                className="text-3xl tracking-wide text-accant1 font-medium"
+              >
+                {" "}
+                {martialArt.name}
+              </h2>
+              <p
+                data-aos="fade-up"
+                data-aos-duration="2000"
+                className="text-xl"
+              >
+                {martialArt.body1}
+              </p>
 
-                <p
-                  data-aos="fade-up"
-                  data-aos-duration="3000"
-                  className="text-xl mt-2"
-                >
-                  {martialArt.body2}
-                </p>
-              </div>
+              <p
+                data-aos="fade-up"
+                data-aos-duration="3000"
+                className="text-xl mt-2"
+              >
+                {martialArt.body2}
+              </p>
             </div>
 
             <div
