@@ -4,7 +4,6 @@ import { useState } from "react";
 import Image from "next/image";
 import { AiOutlinePlus } from "react-icons/ai";
 import SectionTitle from "./SectionTitle";
-
 const martialsArtFaq = [
   {
     id: 1,
@@ -67,8 +66,8 @@ const Faq = () => {
   };
 
   return (
-    <section id="faq" className=" section-padding border-b border-light/20">
-      <SectionTitle title="faq" />
+    <section id="faq" className="section-padding border-b border-light/20">
+      <SectionTitle title="Faq" />
       <div className="wrapper grid grid-col lg:grid-cols-2 gap-10 items-center justify-center mt-14">
         <div className="left image w-[100%] h-[100%] pt-5">
           <Image
@@ -96,7 +95,7 @@ const Faq = () => {
                 </span>
               </div>
               {open === index && (
-                <div className="shadow-sm shadow-light/20 rounded-md  bg-dark p-3 mt-2">
+                <div className="shadow-sm shadow-light/20 rounded-md bg-dark p-3 mt-2">
                   <p>{faq.answer}</p>
                 </div>
               )}
