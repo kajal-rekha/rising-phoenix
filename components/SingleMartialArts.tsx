@@ -1,9 +1,6 @@
 "use client";
 
-import Button from "./Button";
 import Image from "next/image";
-import { motion } from "framer-motion";
-import { getTransition, shutterDown, shutterUp } from "@/utils/getTransition";
 import SectionTitle from "./SectionTitle";
 
 const data = [
@@ -68,70 +65,24 @@ const SingleMartialArts = () => {
                 martialArt.id % 2 === 0 ? "order-last" : null
               }`}
             >
-              <motion.div
-                variants={shutterDown()}
-                initial="from"
-                whileInView="to"
-                transition={getTransition(0.4)}
-              >
+              <div>
                 <span className="text-7xl lg:text-9xl text-light/10 font-bold">
                   0{martialArt.id}
                 </span>
-              </motion.div>
+              </div>
 
               <div>
-                <motion.h2
-                  className="text-3xl tracking-wide text-accant1 font-medium"
-                  variants={shutterDown()}
-                  initial="from"
-                  whileInView="to"
-                  transition={getTransition(0.6)}
-                >
+                <h2 className="text-3xl tracking-wide text-accant1 font-medium">
                   {" "}
                   {martialArt.name}
-                </motion.h2>
-                <motion.p
-                  variants={shutterDown()}
-                  initial="from"
-                  whileInView="to"
-                  transition={getTransition(0.8)}
-                  className="text-xl"
-                >
-                  {martialArt.body1}
-                </motion.p>
+                </h2>
+                <p className="text-xl">{martialArt.body1}</p>
 
-                <motion.p
-                  variants={shutterDown()}
-                  initial="from"
-                  whileInView="to"
-                  transition={getTransition(0.8)}
-                  className="text-xl mt-2"
-                >
-                  {martialArt.body2}
-                </motion.p>
+                <p className="text-xl mt-2">{martialArt.body2}</p>
               </div>
-              {/* <motion.div
-                variants={shutterDown()}
-                initial="from"
-                whileInView="to"
-                transition={getTransition(0.8)}
-                className="py-5 px-8 -ml-8 text-lg -mt-5"
-              >
-                <Button
-                  href="/martialsArt"
-                  placeholder={martialArt.cta}
-                  color="green"
-                />
-              </motion.div> */}
             </div>
 
-            <motion.div
-              variants={shutterUp()}
-              initial="from"
-              whileInView="to"
-              transition={getTransition(1)}
-              className="images w-[100%] h-[100%]"
-            >
+            <div className="images w-[100%] h-[100%]">
               <Image
                 src={martialArt.src}
                 alt={martialArt.name}
@@ -139,7 +90,7 @@ const SingleMartialArts = () => {
                 width={500}
                 className="w-full h-full rounded-lg"
               />
-            </motion.div>
+            </div>
           </div>
         ))}
       </div>

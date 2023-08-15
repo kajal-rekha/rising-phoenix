@@ -4,7 +4,7 @@ import { useState } from "react";
 import Image from "next/image";
 import { AiOutlinePlus } from "react-icons/ai";
 import SectionTitle from "./SectionTitle";
-import { type } from "os";
+
 const martialsArtFaq = [
   {
     id: 1,
