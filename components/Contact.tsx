@@ -112,7 +112,7 @@ const Contact = () => {
           />
         </div>
         <div
-          className="submit  rounded-xl   py-5 px-8 text-center overflow-hidden border border-light/40 bg-transparent  duration-300"
+          className="submit  rounded-xl   py-5 px-8 text-center overflow-hidden border border-light/40 bg-accant1/60 font-medium hover:bg-accant1/80  duration-300"
           data-aos="fade-left"
           data-aos-duration="1000"
         >

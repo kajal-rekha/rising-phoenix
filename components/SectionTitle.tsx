@@ -10,7 +10,7 @@ const SectionTitle: React.FC<SectionTitleProps> = ({ title }) => {
       <h2
         data-aos="fade-down"
         data-aos-duration="1000"
-        className="text-2xl md:text-3xl uppercase text-center text-accant1 font-semibold tracking-wide"
+        className="text-2xl md:text-3xl uppercase text-center text-accant1/60 font-semibold tracking-wide"
       >
         {title}
       </h2>

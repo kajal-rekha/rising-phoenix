@@ -10,7 +10,7 @@ import {
 
 const Footer = () => {
   return (
-    <footer className=" bg-dark section-padding">
+    <footer className=" bg-dark section-padding overflow-x-hidden">
       <div className="wrapper">
         <div className="grid grid-cols-1  lg:grid-cols-4 pb-5  gap-10 md:gap-6 lg:gap-4">
           <div className="w-full">

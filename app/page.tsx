@@ -16,7 +16,7 @@ const HomePage = () => {
     AOS.init();
   }, []);
   return (
-    <main>
+    <main className="overflow-x-hidden">
       <Hero />
       <MartialsArt />
       <Gallery />

@@ -6,14 +6,14 @@ import { MdArrowBackIosNew, MdArrowForwardIos } from "react-icons/md";
 const data = [
   {
     id: 1,
-    src: "https://res.cloudinary.com/dh0ado2ir/image/upload/v1691937354/1_W5hnGHW9OXK6xXHyTJcopw_ng4xuw.jpg",
+    src: "https://res.cloudinary.com/dh0ado2ir/image/upload/v1692211757/UZ6MSNyJRH6QUHJFrwFa_thao-le-hoang-6lTre65C00E-unsplash_wikq0m.jpg",
     headline: "Master Martial Arts at Phoenix Academy",
     body: "Welcome to Phoenix Martial Academy, where ancient traditions meet modern techniques. Our academy is dedicated to empowering individuals of all ages with the knowledge and skills of various martial arts disciplines.",
     cta: "Enroll Now for a Free Trial Class",
   },
   {
     id: 2,
-    src: "https://res.cloudinary.com/dh0ado2ir/image/upload/v1691948026/IMG_4620-e1527127158795_su3e7s.webp",
+    src: "https://res.cloudinary.com/dh0ado2ir/image/upload/v1692212718/pexels-cottonbro-studio-7792259_nnl4ki.jpg",
     headline: "Discover Diverse Martial Arts Classes",
     body: "At Phoenix Martial Academy, we offer a wide range of classes to cater to different interests and skill levels. Whether you're a beginner or an experienced practitioner, you'll find the perfect class to enhance your martial arts journey.",
     cta: "View Class Schedule and Enroll",
@@ -21,7 +21,7 @@ const data = [
 
   {
     id: 3,
-    src: "https://res.cloudinary.com/dh0ado2ir/image/upload/v1691948031/original_r63am5.jpg",
+    src: "https://res.cloudinary.com/dh0ado2ir/image/upload/v1691948026/IMG_4620-e1527127158795_su3e7s.webp",
     headline: "Discover Your True Power arts Training",
     body: "At Phoenix Martial Academy, we believe in customizing your martial arts journey to suit your goals and preferences. Our certified instructors will work closely with you. Whether you're focused on self-defense.",
     cta: "Start Your Personalized Training",
@@ -57,7 +57,7 @@ const Slider = () => {
             <div className="slide-texts  -mt-10 wrapper flex flex-col gap-5 items-start justify-center  h-full text-light/80">
               <div>
                 <h1
-                  className="text-4xl  w-[70vw] md:text-5xl lg:text-6xl font-bold text-accant1 space-font  uppercase overflow-hidden"
+                  className="text-4xl  w-[60vw] md:text-5xl lg:text-6xl font-bold text-accant1/80 space-font uppercase overflow-hidden"
                   data-aos="fade-up"
                   data-aos-duration="1000"
                 >
@@ -73,7 +73,7 @@ const Slider = () => {
                 </p>
               </div>
               <div className="mt-3" data-aos="fade-up" data-aos-duration="3000">
-                <button className="bg-accant1 text-light/80 py-3 px-6 rounded-lg w-full text-lg hover:bg-accant1/75 duration-300">
+                <button className="bg-accant1/80 text-light/80 py-3 px-6 rounded-lg w-full text-lg hover:bg-accant1/75 duration-300">
                   {image.cta}
                 </button>
               </div>
@@ -85,7 +85,7 @@ const Slider = () => {
         <div>
           <button
             onClick={prevSlide}
-            className="prev-btn w-12 h-10 lg:h-12 lg:w-16 flex justify-center items-center bg-accant1 border border-light/80 hover:bg-accant1/75 hover:text-light/80 duration-300"
+            className="prev-btn w-12 h-10 lg:h-12 lg:w-16 flex justify-center items-center bg-accant1/60 border border-light/80 hover:bg-accant1/80 hover:text-light/80 duration-300"
             data-aos="fade-right"
             data-aos-anchor="#example-anchor"
             data-aos-offset="500"
@@ -99,7 +99,7 @@ const Slider = () => {
         <div>
           <button
             onClick={nextSlide}
-            className="next-btn w-12 h-10 lg:h-12 lg:w-16 flex justify-center items-center bg-accant1 border border-light/80 hover:bg-accant1/75 hover:text-light/80 duration-300"
+            className="next-btn w-12 h-10 lg:h-12 lg:w-16 flex justify-center items-center bg-accant1/60 border border-light/80 hover:bg-accant1/80 hover:text-light/80 duration-300"
             data-aos="fade-left"
             data-aos-anchor="#example-anchor"
             data-aos-offset="500"
