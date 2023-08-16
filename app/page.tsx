@@ -4,7 +4,6 @@ import Faq from "@/components/Faq";
 import Gallery from "@/components/Gallery";
 import Hero from "@/components/Hero";
 import Intstructor from "@/components/Intstructor";
-
 import About from "@/components/About";
 import Contact from "@/components/Contact";
 import AOS from "aos";
