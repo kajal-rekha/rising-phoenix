@@ -58,7 +58,7 @@ const SingleMartialArts = () => {
         {data.map((martialArt) => (
           <div
             key={martialArt.id}
-            className="grid grid-cols lg:grid-cols-2 flex-col-reverse items-center justify-center gap-10 mt-24"
+            className="grid grid-cols lg:grid-cols-2 flex-col-reverse items-center justify-center gap-14 mt-24"
           >
             <div
               className={`flex flex-col gap-10 ${

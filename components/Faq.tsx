@@ -71,8 +71,9 @@ const Faq = () => {
       <div className="wrapper grid grid-col lg:grid-cols-2 gap-10 items-center justify-center mt-14">
         <div
           className="left image w-[100%] h-[100%] pt-5"
-          data-aos="fade-up-right"
-          data-aos-duration="1500"
+          data-aos="flip-left"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="1000"
         >
           <Image
             src="https://res.cloudinary.com/dh0ado2ir/image/upload/v1692014706/0_rrYwSyi7VeL0A-Mi_h98onj.png"
