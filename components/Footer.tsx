@@ -38,7 +38,7 @@ const Footer = () => {
             >
               Quick Links
             </h2>
-            <div className="text-light/75 gap-3 flex flex-col">
+            <div className="text-light/75 gap-3 flex flex-col text-lg">
               <ul data-aos="fade-up" data-aos-duration="1500">
                 <li>
                   <Link href="/" className="link-item">
@@ -72,7 +72,7 @@ const Footer = () => {
             >
               More Links
             </h2>
-            <ul data-aos="fade-up" data-aos-duration="1500">
+            <ul className="text-lg" data-aos="fade-up" data-aos-duration="1500">
               <li>
                 <Link href="/#faq" className="link-item">
                   Faq

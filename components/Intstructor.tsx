@@ -68,7 +68,7 @@ const Intstructor = () => {
                 className="tracking-wide"
                 data-aos="fade-up"
                 data-aos-easing="linear"
-                data-aos-duration="1500"
+                data-aos-duration="1000"
               >
                 Intructore:{" "}
                 <span className="text-accant1 font-semibold">{image.name}</span>
@@ -77,14 +77,14 @@ const Intstructor = () => {
                 className="tracking-wide"
                 data-aos="fade-up"
                 data-aos-easing="linear"
-                data-aos-duration="2000"
+                data-aos-duration="1500"
               >
                 Martial Atrs: {image.martials_art}
               </p>
               <p
                 data-aos="fade-up"
                 data-aos-easing="linear"
-                data-aos-duration="3000"
+                data-aos-duration="2000"
               >
                 {image.description.substring(0, 100)}...
               </p>
@@ -92,7 +92,7 @@ const Intstructor = () => {
                 className="pt-5 tracking-wide"
                 data-aos="fade-up"
                 data-aos-easing="linear"
-                data-aos-duration="3000"
+                data-aos-duration="2000"
               >
                 <Button
                   href="/instructore"

@@ -57,9 +57,9 @@ const Slider = () => {
             <div className="slide-texts  -mt-10 wrapper flex flex-col gap-5 items-start justify-center  h-full text-light/80">
               <div>
                 <h1
-                  className="text-4xl  w-[60vw] md:text-5xl lg:text-6xl font-bold text-accant1/80 space-font uppercase overflow-hidden"
+                  className="heading text-4xl w-[60vw] md:text-5xl lg:text-6xl font-bold text-accant1 space-font uppercase overflow-hidden"
                   data-aos="fade-up"
-                  data-aos-duration="1000"
+                  data-aos-duration="800"
                 >
                   {image.headline}
                 </h1>
@@ -73,7 +73,7 @@ const Slider = () => {
                 </p>
               </div>
               <div className="mt-3" data-aos="fade-up" data-aos-duration="3000">
-                <button className="bg-accant1/80 text-light/80 py-3 px-6 rounded-lg w-full text-lg hover:bg-accant1/75 duration-300">
+                <button className="bg-accant1/80 text-light/80 py-3 px-4 lg:py-3 lg:px-6 rounded-lg w-full lg:text-lg hover:bg-accant1/75 duration-300">
                   {image.cta}
                 </button>
               </div>
@@ -81,11 +81,11 @@ const Slider = () => {
           </div>
         ))}
       </div>
-      <div className="btns absolute w-screen justify-center bottom-14 xl:bottom-28 mx-auto z-[1] text-light/80 text-2xl flex gap-8 ">
+      <div className="btns absolute w-screen justify-center bottom-10 xl:bottom-28 mx-auto z-[1] text-light/80 text-2xl flex gap-8 ">
         <div>
           <button
             onClick={prevSlide}
-            className="prev-btn w-12 h-10 lg:h-12 lg:w-16 flex justify-center items-center bg-accant1/60 border border-light/80 hover:bg-accant1/80 hover:text-light/80 duration-300"
+            className="prev-btn w-12 h-10 lg:h-12 lg:w-16 flex justify-center items-center bg-accant1/80 border border-light/80 hover:bg-accant1/90 hover:text-light/80 duration-300"
             data-aos="fade-right"
             data-aos-anchor="#example-anchor"
             data-aos-offset="500"
@@ -99,7 +99,7 @@ const Slider = () => {
         <div>
           <button
             onClick={nextSlide}
-            className="next-btn w-12 h-10 lg:h-12 lg:w-16 flex justify-center items-center bg-accant1/60 border border-light/80 hover:bg-accant1/80 hover:text-light/80 duration-300"
+            className="next-btn w-12 h-10 lg:h-12 lg:w-16 flex justify-center items-center bg-accant1/80 border border-light/80 hover:bg-accant1/90 hover:text-light/80 duration-300"
             data-aos="fade-left"
             data-aos-anchor="#example-anchor"
             data-aos-offset="500"

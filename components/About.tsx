@@ -23,7 +23,7 @@ const About = () => {
             {`make it a convenient and engaging avenue for martial arts enthusiasts of all levels. Beginners find comprehensive tutorials that lay a strong foundation, while seasoned practitioners benefit from advanced insights and techniques. The instructors' expertise spans diverse disciplines, providing a well-rounded experience`}
           </p>
           <div className="mt-8" data-aos="fade-up" data-aos-duration="2000">
-            <Button href="/read more" placeholder="Read More" color="green" />
+            <Button href="/read more" placeholder="read more" color="green" />
           </div>
         </div>
         <div className="right h-[100%] w-[100%]">
