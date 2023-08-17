@@ -42,14 +42,14 @@ To run the Rising Phoenix Martial Arts Academy locally, follow these steps:
  2.  Navigate to the project directory.
       cd rising-phoenix
      
-  4. Install the dependencies using npm or yarn.
+  4. Install the dependencies using npm or yarn 
        npm install
-       # or
+        or
         yarn install
  
 5. Start the development server.
     npm run dev
-    # or
+     or
     yarn dev
 
 6. Open your browser and visit http://localhost:3000 to access the Rising Phoenix Martial Arts Academy.
