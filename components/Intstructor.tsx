@@ -46,7 +46,7 @@ const Intstructor = () => {
         {data.map((image) => (
           <div
             key={image.id}
-            className="card w-full h-[34rem] rounded-xl overflow-hidden  shadow-lg"
+            className="card w-full h-[32rem] lg:h-[34rem] rounded-xl overflow-hidden  shadow-lg"
           >
             <div
               className="h-[18rem] object-cover overflow-hidden"
@@ -63,7 +63,7 @@ const Intstructor = () => {
                 className="w-full h-full object-cover overflow-hidden  hover:scale-125 duration-700"
               />
             </div>
-            <div className="card-details p-5 space-y-2 text-lg">
+            <div className="card-details p-5 space-y-2 lg:text-lg">
               <h3
                 className="tracking-wide"
                 data-aos="fade-up"
@@ -77,14 +77,14 @@ const Intstructor = () => {
                 className="tracking-wide"
                 data-aos="fade-up"
                 data-aos-easing="linear"
-                data-aos-duration="1500"
+                data-aos-duration="1000"
               >
                 Martial Atrs: {image.martials_art}
               </p>
               <p
                 data-aos="fade-up"
                 data-aos-easing="linear"
-                data-aos-duration="2000"
+                data-aos-duration="1000"
               >
                 {image.description.substring(0, 100)}...
               </p>
@@ -92,7 +92,7 @@ const Intstructor = () => {
                 className="pt-5 tracking-wide"
                 data-aos="fade-up"
                 data-aos-easing="linear"
-                data-aos-duration="2000"
+                data-aos-duration="1000"
               >
                 <Button
                   href="/instructore"

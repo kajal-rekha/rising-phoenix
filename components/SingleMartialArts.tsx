@@ -58,7 +58,7 @@ const SingleMartialArts = () => {
         {data.map((martialArt) => (
           <div
             key={martialArt.id}
-            className="grid grid-cols lg:grid-cols-2 flex-col-reverse items-center justify-center gap-14 mt-24"
+            className="grid grid-cols lg:grid-cols-2 flex-col-reverse items-center justify-center gap-14 mt-24 lg:mt-32"
           >
             <div
               className={`flex flex-col gap-10 ${
@@ -74,7 +74,7 @@ const SingleMartialArts = () => {
               <h2
                 data-aos="fade-up"
                 data-aos-duration="1500"
-                className="text-3xl tracking-wide text-accant1 font-medium"
+                className="text-2xl lg:text-3xl tracking-wide text-accant1 font-medium"
               >
                 {" "}
                 {martialArt.name}
@@ -82,7 +82,7 @@ const SingleMartialArts = () => {
               <p
                 data-aos="fade-up"
                 data-aos-duration="2000"
-                className="text-xl"
+                className="text-lg lg:text-xl"
               >
                 {martialArt.body1}
               </p>
@@ -90,7 +90,7 @@ const SingleMartialArts = () => {
               <p
                 data-aos="fade-up"
                 data-aos-duration="3000"
-                className="text-xl mt-2"
+                className="text-lg lg:text-xl"
               >
                 {martialArt.body2}
               </p>
@@ -100,7 +100,7 @@ const SingleMartialArts = () => {
               data-aos="flip-left"
               data-aos-easing="ease-out-cubic"
               data-aos-duration="2000"
-              className="images w-[100%] h-[100%]"
+              className="images w-full h-full"
             >
               <Image
                 src={martialArt.src}

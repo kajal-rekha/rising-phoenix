@@ -3,7 +3,7 @@ import { cva, VariantProps } from "class-variance-authority";
 import clsx from "clsx";
 
 const buttonVariants = cva(
-  "lg:px-6 lg:py-3 px-4 py-3 rounded-xl duration-300",
+  "lg:px-6 lg:py-3 px-3 py-2 rounded-xl duration-300",
   {
     variants: {
       color: {

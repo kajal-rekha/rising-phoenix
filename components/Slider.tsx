@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { MdArrowBackIosNew, MdArrowForwardIos } from "react-icons/md";
+import Button from "./Button";
 
 const data = [
   {
@@ -54,10 +55,10 @@ const Slider = () => {
             className="slide w-full h-full object-cover"
             style={{ backgroundImage: `url(${image.src})` }}
           >
-            <div className="slide-texts  -mt-10 wrapper flex flex-col gap-5 items-start justify-center  h-full text-light/80">
+            <div className="slide-texts  -mt-14 lg:-mt-10 wrapper flex flex-col gap-5 items-start justify-center  h-full text-light/80">
               <div>
                 <h1
-                  className="heading text-4xl w-[60vw] md:text-5xl lg:text-6xl font-bold text-accant1 space-font uppercase overflow-hidden"
+                  className="heading text-3xl lg:w-[60vw] w-full md:text-5xl lg:text-6xl font-bold text-accant1 space-font uppercase overflow-hidden"
                   data-aos="fade-up"
                   data-aos-duration="800"
                 >
@@ -65,7 +66,7 @@ const Slider = () => {
                 </h1>
 
                 <p
-                  className="text-lg mt-5 md:text-xl w-[50vw]"
+                  className="text-lg mt-5 md:text-xl lg:w-[50vw] w-full"
                   data-aos="fade-up"
                   data-aos-duration="2000"
                 >
@@ -73,15 +74,13 @@ const Slider = () => {
                 </p>
               </div>
               <div className="mt-3" data-aos="fade-up" data-aos-duration="3000">
-                <button className="bg-accant1/80 text-light/80 py-3 px-4 lg:py-3 lg:px-6 rounded-lg w-full lg:text-lg hover:bg-accant1/75 duration-300">
-                  {image.cta}
-                </button>
+                <Button href="/" placeholder={image.cta} color="green" />
               </div>
             </div>
           </div>
         ))}
       </div>
-      <div className="btns absolute w-screen justify-center bottom-10 xl:bottom-28 mx-auto z-[1] text-light/80 text-2xl flex gap-8 ">
+      <div className="btns absolute w-screen justify-center bottom-28 mx-auto z-[1] text-light/80 text-2xl flex gap-8 ">
         <div>
           <button
             onClick={prevSlide}

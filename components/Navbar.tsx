@@ -73,7 +73,7 @@ const Navbar = () => {
         </nav>
         {/* NAV RIGHT */}
         <nav
-          className="items-center text-lg"
+          className="items-center lg:text-lg"
           data-aos="fade-left"
           data-aos-duration="1000"
         >
