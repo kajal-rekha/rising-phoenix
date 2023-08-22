@@ -62,8 +62,8 @@ const Contact = () => {
   return (
     <section id="contact" className="contact wrapper section-padding">
       <SectionTitle title="contact us" />
-      <div className="grid grid-cols lg:grid-cols-[45%_auto] gap-10 mt-28">
-        <div className="w-full h-[88%] mt-10 ">
+      <div className="grid grid-cols lg:grid-cols-[45%_auto] gap-10 mt-20">
+        <div className="w-full h-[88%] mt-14">
           <Image
             src="https://res.cloudinary.com/dh0ado2ir/image/upload/v1692713402/w_1000_hywuln.avif"
             alt="contact_image"
@@ -80,7 +80,7 @@ const Contact = () => {
           <form
             ref={formRef}
             onSubmit={handleSubmit}
-            className="contact-form flex flex-col text-lg gap-10 py-10  mx-auto"
+            className="contact-form flex flex-col text-lg gap-10 py-10  mx-auto mt-5"
           >
             <div className="form-control flex flex-col gap-2">
               <input
