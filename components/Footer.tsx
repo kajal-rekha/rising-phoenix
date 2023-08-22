@@ -64,7 +64,7 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className="w-full xl:ml-28">
+          <div className="w-full xl:ml-20">
             <h2
               data-aos="fade-down"
               data-aos-duration="1000"
