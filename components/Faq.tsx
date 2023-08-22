@@ -84,13 +84,10 @@ const Faq = () => {
             className="w-full h-full rounded-lg"
           />
         </div>
-        <div>
+        <div data-aos="fade-left" data-aos-duration="1000">
           {martialsArtFaq.map((faq, index) => (
             <div key={faq.id} className="w-full">
               <div
-                data-aos="fade-up"
-                data-aos-easing="linear"
-                data-aos-duration="1000"
                 className={`faq-item flex justify-between mt-6 bg-dark items-center p-3 shadow-sm shadow-light/30 rounded-md  ${
                   open === index && "text-light/80 font-semibold"
                 }`}
