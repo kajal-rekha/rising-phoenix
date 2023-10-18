@@ -54,4 +54,4 @@ To run the Rising Phoenix Martial Arts Academy locally, follow these steps:
 
 6. Open your browser and visit http://localhost:3000 to access the Rising Phoenix Martial Arts Academy.
 
-     Thank you for your interest in the Rising Phoenix Martial Arts Academy! For any inquiries or feedback, please contact us at           info@risingphoenixmartialarts.com. Stay empowered and keep training! 🥋🔥
+     Thank you for your interest in the Rising Phoenix Martial Arts Academy! For any inquiries or feedback, please contact us at           info@risingphoenixmartialarts.com. 
