@@ -34,8 +34,7 @@ const About = () => {
             height={800}
             priority
             className="rounded-lg w-full h-full"
-            data-aos="flip-left"
-            data-aos-easing="ease-out-cubic"
+            data-aos="fade-down"
             data-aos-duration="1000"
           />
         </div>

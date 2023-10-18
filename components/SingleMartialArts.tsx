@@ -2,6 +2,8 @@
 
 import { martialsarts } from "@/data/martialsArt";
 import Image from "next/image";
+import Link from "next/link";
+import Button from "./Button";
 import SectionTitle from "./SectionTitle";
 
 const SingleMartialArts = () => {
@@ -15,7 +17,7 @@ const SingleMartialArts = () => {
             className="grid grid-cols lg:grid-cols-2 flex-col-reverse items-center justify-center gap-14 mt-24 lg:mt-32"
           >
             <div
-              className={`flex flex-col gap-10 ${
+              className={`flex flex-col gap-10 -mt-5 ${
                 martialArt.id % 2 === 0 ? "order-last" : null
               }`}
             >
@@ -28,7 +30,7 @@ const SingleMartialArts = () => {
               <h2
                 data-aos="fade-up"
                 data-aos-duration="1500"
-                className="text-2xl lg:text-3xl tracking-wide text-accant1 font-medium"
+                className="text-2xl lg:text-3xl tracking-wide text-accant1 font-medium -mt-5"
               >
                 {" "}
                 {martialArt.name}
@@ -36,7 +38,7 @@ const SingleMartialArts = () => {
               <p
                 data-aos="fade-up"
                 data-aos-duration="2000"
-                className="text-lg lg:text-xl"
+                className="text-lg lg:text-xl -mt-5"
               >
                 {martialArt.body1}
               </p>
@@ -44,16 +46,22 @@ const SingleMartialArts = () => {
               <p
                 data-aos="fade-up"
                 data-aos-duration="3000"
-                className="text-lg lg:text-xl"
+                className="text-lg lg:text-xl -mt-6"
               >
                 {martialArt.body2}
               </p>
+              <div data-aos="fade-up" data-aos-duration="3000">
+                <Button
+                  href={`/martialsArt/${martialArt.id}`}
+                  placeholder={martialArt.cta}
+                  color="green"
+                />
+              </div>
             </div>
 
             <div
-              data-aos="flip-left"
-              data-aos-easing="ease-out-cubic"
-              data-aos-duration="2000"
+              data-aos="fade-down"
+              data-aos-duration="1000"
               className="images w-full h-full"
             >
               <Image

@@ -63,7 +63,7 @@ const Intstructor = () => {
                 data-aos-duration="1000"
               >
                 <Button
-                  href="/instructore"
+                  href={`/instructor/${instructors.id}`}
                   placeholder={image.cta}
                   color="green"
                 />

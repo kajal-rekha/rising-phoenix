@@ -71,8 +71,7 @@ const Contact = () => {
             height={500}
             priority
             className="w-full h-full rounded-lg"
-            data-aos="flip-left"
-            data-aos-easing="ease-out-cubic"
+            data-aos="fade-right"
             data-aos-duration="1000"
           />
         </div>
@@ -84,7 +83,7 @@ const Contact = () => {
           >
             <div className="form-control flex flex-col gap-2">
               <input
-                data-aos="fade-right"
+                data-aos="fade-left"
                 data-aos-duration="1000"
                 type="text"
                 name="fullname"
@@ -115,7 +114,7 @@ const Contact = () => {
 
             <div className="form-control flex flex-col gap-2">
               <textarea
-                data-aos="fade-right"
+                data-aos="fade-left"
                 data-aos-duration="1000"
                 placeholder="Message"
                 name="message"
